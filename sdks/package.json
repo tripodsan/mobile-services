@@ -1,39 +1,27 @@
 {
-    "name": "com.adobe.ADBMobile",
+    "name": "com.adobe.cordova.adbmobile",
     "description": "Cordova Adobe Mobile SDK",
-    "version": "4.6.0",
-    "repository": { "type":"git", "url":"git+ssh://git@git.corp.adobe.com:dms-mobile/sdk.git" },
-    "private": true,
-
-    "versions": {
-		"sdks": {
-			"ios": "4.4.1",
-			"osx": null,
-			"android": "4.4.2",
-			"winu": "4.0.0",
-			"xboxone": null,
-			"blackberry": "4.0.0",
-			"phonegap": null,
-			"unity": "4.4.2",
-			"xamarin": "4.4.2"
+    "version": "4.6.0-rc.0",
+	"cordova": {
+		"id": "om.adobe.ADBMobile",
+		"platforms": [
+			"ios", "android"
+		]
+	},
+	"engines": [
+		{
+			"name": "cordova-android",
+			"version": ">=3.0.0"
 		},
-		"sample-apps": {
-			"ios": "1.1",
-			"osx": null,
-			"android": "1.1",
-			"windows8": null,
-			"winphone8": null,
-			"xboxone": null,
-			"blackberry": null,
-			"phonegap": null,
-			"unity": null,
-			"xamarin": null
-		},
-		"tools": {
-			"bloodhound": {
-				"osx": "3.0Beta",
-				"windows": "2.2"
-			}
+		{
+			"name": "cordova-ios",
+			"version": ">=3.0.0"
 		}
-	}
+	],
+    "repository": {
+		"type":"git",
+		"url":"git+ssh://git@github.com:tripodsan/mobile-services.git"
+	},
+    "author": "Adobe Systems Incorporated",
+	"license": "Adobe Systems Incorporated"
 }
